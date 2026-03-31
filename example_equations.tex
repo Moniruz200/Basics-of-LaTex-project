@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{How to Write Mathematical Equations in LaTeX}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Inline Equations}
+You can write equations inline like $E = mc^2$ or $a^2 + b^2 = c^2$ within your text.
+
+\section{Display Equations}
+
+\subsection{Basic Equation}
+\begin{equation}
+    f(x) = ax^2 + bx + c
+    \label{eq:quadratic}
+\end{equation}
+
+\subsection{Quadratic Formula}
+\begin{equation}
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+    \label{eq:quadratic_formula}
+\end{equation}
+
+\section{Aligned Equations}
+
+\begin{align}
+    (x+y)^2 &= x^2 + 2xy + y^2 \\
+    (x-y)^2 &= x^2 - 2xy + y^2 \\
+    x^2 - y^2 &= (x+y)(x-y)
+\end{align}
+
+\section{Matrices}
+
+\subsection{Matrix Example}
+\begin{equation}
+    \begin{pmatrix}
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        7 & 8 & 9
+    \end{pmatrix}
+\end{equation}
+
+\section{Calculus}
+
+\subsection{Derivatives}
+\begin{equation}
+    \frac{d}{dx}(x^n) = nx^{n-1}
+\end{equation}
+
+\subsection{Integrals}
+\begin{equation}
+    \int_a^b f(x) \, dx = F(b) - F(a)
+\end{equation}
+
+\subsection{Limits}
+\begin{equation}
+    \lim_{x \to \infty} \frac{1}{x} = 0
+\end{equation}
+
+\section{Complex Equations}
+
+\begin{align}
+    \sin^2(\theta) + \cos^2(\theta) &= 1 \\
+    e^{i\pi} + 1 &= 0 \\
+    \frac{\partial f}{\partial x} &= \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+\end{align}
+
+\end{document}
